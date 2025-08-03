@@ -1,0 +1,68 @@
+
+.shimmer-wrapper {
+    /* position: relative; */
+    /* left: 25rem; */
+  overflow: hidden;
+  /* position: relative; */
+  background: #e6e3e3;
+  margin: 0 auto;
+}
+
+.shimmer {
+  height: 100%;
+   width: 50%;
+  background: linear-gradient(
+    to right,
+    #f0f0f0 0%,
+    #e0e0e0 50%,
+    #f0f0f0 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-row {
+  display: flex;
+  gap: 16px;
+  padding: 12px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.shimmer-cell {
+  height: 20px;
+  border-radius: 4px;
+}
+
+.cell-logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.cell-name {
+  width: 120px;
+}
+
+.cell-symbol {
+  width: 60px;
+}
+
+.cell-price {
+  width: 100px;
+}
+
+.cell-marketcap {
+  width: 140px;
+}
