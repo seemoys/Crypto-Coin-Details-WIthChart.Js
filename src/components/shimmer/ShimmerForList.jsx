@@ -1,5 +1,5 @@
   import "./Shimmer.css"
-  function Shimmer({ number }) {
+  function ShimmerForList({ number }) {
       return (
           <>
               <div className="shimmer-body">
@@ -27,4 +27,5 @@
           </>
       )
   }
-  export default Shimmer;
+export default ShimmerForList;
+  

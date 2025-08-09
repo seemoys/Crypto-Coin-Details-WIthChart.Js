@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import CryptoContainer from "./api/CryptoContainer"
 import CryptoList from "./components/cryptolist/CryptoList"
-import CoinDetails from "./components/coindetails/CoinDetails"
+import CoinDetailsContainer from "./api/CoinDetailsContainer"
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<CryptoContainer />}/>
-        <Route path="/coin/:coinId" element={<CoinDetails />}/>
+        <Route path="/coin/:coinId" element={<CoinDetailsContainer />}/>
       </Routes>
       
     </BrowserRouter>

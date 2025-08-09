@@ -1,0 +1,87 @@
+/* ShimmerETH.css */
+
+.shimmer {
+  background: linear-gradient(90deg, #ececec 25%, #f4f4f4 50%, #ececec 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-eth-card {
+  width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.06);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.shimmer-eth-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.shimmer-eth-logo {
+  width: 44px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.shimmer-eth-title {
+  width: 260px;
+  height: 28px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.shimmer-eth-row {
+  width: 200px;
+  height: 18px;
+  border-radius: 5px;
+  margin: 8px 0 8px 0;
+}
+
+.shimmer-eth-row-short {
+  width: 120px;
+}
+
+.shimmer-eth-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-left: 72px; /* indent rows for effect */
+}
+
+.shimmer-eth-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.shimmer-eth-chart {
+  width: 350px;
+  height: 200px;
+  border-radius: 12px;
+  position: relative;
+    bottom:3rem;
+    left: 5rem;
+}
+
+.shimmer-eth-desc {
+  height: 22px;
+  width: 240px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.shimmer-eth-desc-short {
+  width: 180px;
+}

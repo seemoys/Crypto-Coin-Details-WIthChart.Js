@@ -1,8 +1,8 @@
 import DataTable, { createTheme } from "react-data-table-component";
 import { useTheme } from "../../context/ThemeContext";
-import Shimmer from "../shimmer/Shimmer";
 import { MdDarkMode ,MdOutlineDarkMode } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import ShimmerForList from "../shimmer/ShimmerForList";
 
 // Optional: Define a clean theme
 createTheme('cryptoTheme', {
@@ -89,7 +89,7 @@ function CryptoList({ searchText,filteredCoinsDetails,onSearchChange,loading,err
         <>
         
             {error && <p style={{ textAlign: 'center' }}>Error coins...</p>}
-        {loading ? <Shimmer number={10} /> : (
+        {loading ? <ShimmerForList number={10} /> : (
           <div style={{width:"100%",minHeight: "100vh",backgroundColor: isDark ? "#1a202c" : "#f7fafc",color: isDark ? "#f0f0f0" : "#1a202c",transition: "background-color 0.3s ease, color 0.3s ease",
         }}>
           {fetchTime && (

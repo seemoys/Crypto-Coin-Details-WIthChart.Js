@@ -47,8 +47,8 @@ function CryptoContainer() {
             onSearchChange={(e) => setSearchText(e.target.value)}
             loading={loading}
             error={error}
-        onRefresh={fetchCoins}
-        fetchTime={fetchTime}
+            onRefresh={fetchCoins}
+            fetchTime={fetchTime}
         />
     )
     
